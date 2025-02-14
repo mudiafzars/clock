@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #000;
+    /* color: white; */
+}
+
+@font-face {
+    font-family: 'LED';
+    src: url('fonts/DS-DIGI.TTF');
+}
+
+@font-face {
+    font-family: 'DAYS';
+    src: url('fonts/BebasNeue-Regular.ttf');
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.digital-clock{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border: 0.5rem solid #2d2d2d;
+}
+
+.week{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: "DAYS";
+}
+
+.week .active{
+    color: white;
+
+}
+
+.time{
+    font-family: "LED";
+}
+
+.hour, .min, .dot{
+    display: inline-block;
+    font-size: 13rem;
+}
+
+.min{
+    display: math;
+}
+
+.invisible{
+    visibility: hidden;
+}
